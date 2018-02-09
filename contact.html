@@ -1,72 +1,218 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset-"utf-8">
-        <title>Elisa's Portfolio</title>
-        <link rel="stylesheet" href="./css/style01.css">
-    </head>
-    <body>
-        <div id="wrapper">
-            <header> 
-                <h1> Pretty Little Space</h1>
-            </header>
-            <nav>
-                <a href="#">Home</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <a href="#">About Me</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <a href="#">Contact Me</a> 
-            </nav>
-            <article>
-                <section>
-                    <form class="contact_form" action="#" method="post" name="contact_form">
-                        <ul>
-                            <li>
-                                <h2>Contact Me</h2>
-                                <span class="required_notification">* Denote required fields</span>
-                            </li>
-                            <li>
-                                <label for="name">Name</label>
-                                <input type="text" maxlength=20 placeholder="Elisa Ong" required />
-                                <span class="form_hint">Name is required</span>
-                            </li>
-                            <li>
-                                <label for="email">Email</label>
-                                <input type="email" placeholder="elisaongst@outlook.com" required />
-                                <span class="form_hint"> Enter proper email format, i.e. someone@example.com</span>
-                            </li>
-                            <li>
-                                <label for="url">Website</label>
-                                <input type="url" placeholder="www.cnbc.com" required pattern="(http|https)://.+"/>
-                                <span class="form_hint">Enter valid url format</span>
-                            </li>
-                            <li>
-                                <label for="comments">Comments</label>
-                                <textarea name="message" cols="20" rows="4"></textarea>
-                            </li>
-                            </li>
-                                <button class="submit" type="submit">Submit Form</button>
-                            </li>  
-                        </ul>
-                     </form> 
-            </section>
-            </article>
-            <aside>
-                <h3>Freelance Design Services</h3>
-                <ul>
-                    <li><a href="#">Monthly Package</a></li>
-                    <li><a href="#">Hourly Charge</a></li>
-                    <li><a href="#">Project Basis</a></li>
-                </ul>
-                <br>
-                <p>Spread the good news now!</p>
-                <p>Refer a friend, and get referral incentive!</p>
-                <p>Drop me an <a href="#">email</a> now!</p>
-            </aside>
-            <footer>
-                Copyright &copy; Elisa Ong 2018
-            </footer>
-        </div>
-    </body>
-       
-    
+        <meta-charset="utf-8">
+        <meta name="descrption" content="my first bootstrap html">
+        <meta name="keywords" content="HTML5, CSS3, bootstrap, Javascript, XML">
+        <meta name="author" content="Elisa">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+        <title>My BS Page</title>
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./css/newstyle.css">
+        <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    </head>
+
+    <body>
+         <!-- overall container that contains the entire page layout -->
+        <div class=" container-fluid">
+
+            <!-- header banner -->
+            <header class="jumbotron">
+                <h1>
+                    Elisa Ong Profile
+                </h1>
+                <p>
+                    My First Bootstrap
+                </p>
+            </header>
+             
+            <!-- nav menu bar -->
+            <nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="#">ElisaOng</a>
+                    </div>
+                    <ul class="nav navbar-nav">
+                        <li class="active">
+                            <a href="bootstrap.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="about.html">About</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                    <div id="navbar" class="collapse navbar-collapse">
+                        <form class="navbar-form navbar-right" action="/action_page.php">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search">
+                            </div>
+                            <button type="submit" class="btn btn-default">Submit</button>
+                        </form>    
+                    </div>
+            </nav>
+
+
+            <div class="container">
+
+                    <form class="well form-horizontal" action=" " method="post"  id="contact_form">
+                <fieldset>
+                
+                <!-- Form Name -->
+                <h1>
+                        Contact Me
+                    </h1>
+                    <hr>
+                    <p>
+                        Design is a work process which has a user perspective and drives development based on your specific customers' needs.
+                        Methods and approaches differ depending on what you are developing but whether that involves processes in the healthcare sector 
+                        or product development at a company we can say with certainty that design will help you to find new solutions.
+                        Design concerns everyone and everything. It is a powerful tool for influencing hearts and minds and for promoting creative thinking 
+                        and human consideration.Our surroundings profoundly shape us, as do our presents and pasts. Technological, financial and personal 
+                        resources and time aspects are basic elements that must be defined before work can commence.
+                    </p>
+
+                <br><br>
+         
+                <div class="form-group">
+                  <label class="col-md-4 control-label">First Name</label>  
+                  <div class="col-md-4 inputGroupContainer">
+                  <div class="input-group">
+                  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                  <input  name="first_name" placeholder="First Name" class="form-control"  type="text">
+                    </div>
+                  </div>
+                </div>
+                
+                
+                <div class="form-group">
+                  <label class="col-md-4 control-label" >Last Name</label> 
+                    <div class="col-md-4 inputGroupContainer">
+                    <div class="input-group">
+                  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                  <input name="last_name" placeholder="Last Name" class="form-control"  type="text">
+                    </div>
+                  </div>
+                </div>
+                
+                       <div class="form-group">
+                  <label class="col-md-4 control-label">E-Mail</label>  
+                    <div class="col-md-4 inputGroupContainer">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                  <input name="email" placeholder="E-Mail Address" class="form-control"  type="text">
+                    </div>
+                  </div>
+                </div>
+                
+                       
+                <div class="form-group">
+                  <label class="col-md-4 control-label">Phone</label>  
+                    <div class="col-md-4 inputGroupContainer">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+                  <input name="phone" placeholder="+65 6831 1234" class="form-control" type="text">
+                    </div>
+                  </div>
+                </div>
+                      
+                <div class="form-group">
+                  <label class="col-md-4 control-label">Address</label>  
+                    <div class="col-md-4 inputGroupContainer">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+                  <input name="address" placeholder="Address" class="form-control" type="text">
+                    </div>
+                  </div>
+                </div>
+                 
+                <div class="form-group">
+                  <label class="col-md-4 control-label">City</label>  
+                    <div class="col-md-4 inputGroupContainer">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+                  <input name="city" placeholder="City" class="form-control"  type="text">
+                    </div>
+                  </div>
+                </div>
+                
+                
+                <div class="form-group">
+                  <label class="col-md-4 control-label">Zip Code</label>  
+                    <div class="col-md-4 inputGroupContainer">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+                  <input name="zip" placeholder="Zip Code" class="form-control"  type="text">
+                    </div>
+                </div>
+                </div>
+
+                  
+                <div class="form-group">
+                  <label class="col-md-4 control-label"> Your Queries</label>
+                    <div class="col-md-4 inputGroupContainer">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+                            <textarea class="form-control" name="comment" placeholder="Tell us more..."></textarea>
+                  </div>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label class="col-md-4 control-label"></label>
+                  <div class="col-md-4">
+                    <button type="submit" class="btn btn-warning" >Send <span class="glyphicon glyphicon-send"></span></button>
+                  </div>
+                </div>
+                
+                </fieldset>
+                </form>
+                </div>
+         </div>
+         <hr>
+         <!-- fontawesome social media icon -->
+         <div class="container-fluid">
+                 <div class="row">
+                     <div class="col-xs-12 text-center">
+                         <ul class="list-inline">
+                             <li>
+                                 <a href="https://www.facebook.com"><i class="fab fa-facebook-f fa-2x"></i></a>
+                             </li>
+                             <li>
+                                 <a href="https://www.instagram.com"><i class="fab fa-instagram fa-2x"></i></a>                               
+                             </li>
+                             <li>
+                                 <a href="https://www.google.com"><i class="fab fa-google fa-2x"></i></a>                                 
+                             </li>
+                             <li>
+                                 <a href="https://www.twitter.com"><i class="fab fa-twitter fa-2x"></i></a>                                    
+                             </li>
+                         </ul>
+                     </div>
+                 </div>
+         </div>
+
+       
+
+        <!-- footer -->
+        <footer class="text-center">
+            Coyright &copy; 2018. Elisa Ong
+        </footer>
+
+
+
+    
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+
+    </body>
 </html>
